@@ -1,22 +1,22 @@
 #include<iostream>
 #include<string.h>
 using namespace std;
-class String
+class STRING
 {
 	char str[200];
 	public:
 		void read()
 		{
-			cout<<"Enter a string: ";
+			cout<<"Enter String: ";
 			cin>>str;
 		}
 	void print()
 	{
 		cout<<"String is : "<<str<<endl;
 	}
-	String operator + (String x)
+	STRING operator + (STRING x)
 	{
-		String t;
+		STRING t;
 		strcpy(t.str,str);
 		strcat(t.str,x.str);
 		return t;
@@ -24,7 +24,7 @@ class String
 };
 int main()
 {
-	String s1,s2,s3;
+	STRING s1,s2,s3;
 	s1.read();
 	s2.read();
 	s3=s1+s2;
