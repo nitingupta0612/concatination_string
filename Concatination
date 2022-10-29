@@ -5,12 +5,12 @@ class String
 {
 	char str[200];
 	public:
-		void read()
+		void getstring()
 		{
 			cout<<"Enter a string: ";
 			cin>>str;
 		}
-	void print()
+	void printstring()
 	{
 		cout<<"String is : "<<str<<endl;
 	}
@@ -25,9 +25,9 @@ class String
 int main()
 {
 	String s1,s2,s3;
-	s1.read();
-	s2.read();
+	s1.getstring();
+	s2.getstring();
 	s3=s1+s2;
-	s3.print();
+	s3.printstring();
 	return 0;
 }
